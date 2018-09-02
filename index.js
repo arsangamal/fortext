@@ -1,11 +1,11 @@
-exports.fortext = (function() {
+(function() {
     // initials function
     String.prototype.initials = function(isInitialsCapital, execludeWordsArray) {
         var
             result = "",
             words = this.trim().split(" ");
         // if no execlude words go and iterate over the words array
-        if ( execludeWordsArray.constructor === Array && execludeWordsArray.length == 0) {
+        if ( typeof execludeWordsArray == 'undefined' || execludeWordsArray.length == 0) {
             // append each words first letter to result variable
             words.forEach(function(word) {
                 result += word.split("")[0];
@@ -13,7 +13,7 @@ exports.fortext = (function() {
         } else {
             // ignore execluded words from string
             words.forEach(function(word) {
-                if (execludeWordsArray.indexOf(word) == -1) {
+                if ( execludeWordsArray.indexOf(word) == -1) {
                     result += word.split("")[0];
                 }
             })
