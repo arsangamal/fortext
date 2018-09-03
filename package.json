@@ -1,21 +1,25 @@
 {
-  "name": "fortext",
-  "version": "1.0.3",
-  "description": "A javascript library for text operations",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "uglifyjs index.js --compress --mangle --output \"dist/fortext.min.js\""
+    "name": "fortext",
+    "version": "1.0.4",
+    "description": "A javascript library for text operations",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "uglifyjs index.js --compress --mangle --output \"dist/fortext.min.js\""
+    },
+    "keywords": [
+        "text",
+        "string",
+        "text",
+        "operations"
+    ],
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/ArsanGamal/fortext.git"
   },
-  "keywords": [
-    "text",
-    "string",
-    "text",
-    "operations"
-  ],
-  "author": "Arsan Gamal <arsan.gamal@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "uglify-js": "^3.4.9"
-  }
+    "author": "Arsan Gamal <arsan.gamal@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "uglify-js": "^3.4.9"
+    }
 }
