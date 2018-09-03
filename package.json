@@ -1,6 +1,6 @@
 {
     "name": "fortext",
-    "version": "1.0.4",
+    "version": "1.1.0",
     "description": "A javascript library for text operations",
     "main": "index.js",
     "scripts": {
@@ -14,9 +14,9 @@
         "operations"
     ],
     "repository": {
-    "type": "git",
-    "url": "https://github.com/ArsanGamal/fortext.git"
-  },
+        "type": "git",
+        "url": "https://github.com/ArsanGamal/fortext.git"
+    },
     "author": "Arsan Gamal <arsan.gamal@gmail.com>",
     "license": "ISC",
     "dependencies": {
