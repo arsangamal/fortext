@@ -1,9 +1,10 @@
-﻿## Fortext
+## Fortext
+
 A javascript library for text operations.
 
 ### Available functions
 
-#### initials()
+#### initials([ isInitialsCapital [ , execludeWordsArray ] ])
 ##### get the initials of a string capital or as it is, with or without some words
 
     var text = "national aeronautics and space administration";
@@ -24,5 +25,3 @@ A javascript library for text operations.
     console.log(text.lastWord()); //output: administration
 
 **More is yet to come ;)** ..
- 
-
