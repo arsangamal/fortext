@@ -2,7 +2,7 @@
     "name": "fortext",
     "version": "1.2.0",
     "description": "A javascript library for text operations",
-    "main": "src/index.js",
+    "main": "src/fortext.min.js",
     "scripts": {
         "dev": "webpack",
         "prod": "webpack --config webpack.prod.js",
