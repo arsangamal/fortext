@@ -1,19 +1,19 @@
 /**
- * @Author: arsan
- * @Date:   2018-09-03T18:57:11+02:00
- * @Last modified by:   arsan
- * @Last modified time: 2018-09-03T19:09:35+02:00
+ * @Author: Arsan Gamal <arsangamal>
+ * @Date:   2018-09-05T14:58:18+02:00
+ * @Email:  arsan.gamal@gmail.com
+ * @Filename: initials.js
+ * @Last modified by:   arsangamal
+ * @Last modified time: 2018-09-05T16:00:14+02:00
  */
 
-(function() {
-
-
-    /**
-     * Get initials of a string
-     * @param  {Boolean} isInitialsCapital  return capital letters
-     * @param  {[type]}  execludeWordsArray ignore words in execludeWordsArray
-     * @return {[String]}                     initials of the string
-     */
+/**
+ * Get initials of a string
+ * @param  {Boolean} isInitialsCapital  return capital letters
+ * @param  {[type]}  execludeWordsArray ignore words in execludeWordsArray
+ * @return {[String]}                     initials of the string
+ */
+export default (function() {
     String.prototype.initials = function(isInitialsCapital, execludeWordsArray) {
         var
             result = "",
@@ -35,23 +35,4 @@
         // return the result uppercase if isInitialsCapital is true else as it is
         return (isInitialsCapital === true ? result.toUpperCase() : result);
     }
-
-    /**
-     * Get first word from string
-     * @return {[String]} the first word
-     */
-    String.prototype.firstWord = function() {
-        return this.trim().split(" ")[0];
-    }
-
-    /**
-     * Get last word of the text
-     * @return {[String]} the last word
-     */
-    String.prototype.lastWord = function(){
-        var str = this.trim().split(" ");
-        return str[str.length-1];
-    }
-
-
-})();
+})()
