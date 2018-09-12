@@ -1,0 +1,770 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "functions/firstWord.js",
+    "content": "/**\n * Get first word from string\n * @return {[String]} the first word\n */\n\nexport default String.prototype.firstWord = function() {\n    return this.trim().split(\" \")[0];\n}\n",
+    "static": true,
+    "longname": "/home/arsan/Programming/npm/fortext/src/functions/firstWord.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "firstWord",
+    "memberof": "functions/firstWord.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "functions/firstWord.js~firstWord",
+    "access": "public",
+    "export": true,
+    "importPath": "fortext/functions/firstWord.js",
+    "importStyle": "firstWord",
+    "description": "Get first word from string",
+    "lineNumber": 6,
+    "return": {
+      "nullable": null,
+      "types": [
+        "[String]"
+      ],
+      "spread": false,
+      "description": "the first word"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "functions/howMany.js",
+    "content": "/**\n * How many occurences of a string in another string\n * @param  {[Strin]}  search                  search string\n * @param  {Boolean} [isCaseSensitive=false] determine the Case Sensitivity of search\n * @return {[int]}                          number of occurences\n */\nexport default String.prototype.howMany = function(search, isCaseSensitive = false) {\n    var re = new RegExp(search, \"g\" + (isCaseSensitive == true ? \"\" : 'i'));\n    return (this.match(re) || []).length;\n}\n",
+    "static": true,
+    "longname": "/home/arsan/Programming/npm/fortext/src/functions/howMany.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "howMany",
+    "memberof": "functions/howMany.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "functions/howMany.js~howMany",
+    "access": "public",
+    "export": true,
+    "importPath": "fortext/functions/howMany.js",
+    "importStyle": "howMany",
+    "description": "How many occurences of a string in another string",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "[Strin]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "search",
+        "description": "search string"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "false",
+        "defaultRaw": false,
+        "name": "isCaseSensitive",
+        "description": "determine the Case Sensitivity of search"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "[int]"
+      ],
+      "spread": false,
+      "description": "number of occurences"
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "functions/initials.js",
+    "content": "/**\n * Get initials of a string\n * @param  {Boolean} isInitialsCapital  return capital letters\n * @param  {type}  execludeWordsArray ignore words in execludeWordsArray\n * @return {String} initials of  a string\n */\nexport default String.prototype.initials = function(isInitialsCapital, execludeWordsArray) {\n    var\n        result = \"\",\n        words = this.trim().split(\" \");\n    // if no execlude words go and iterate over the words array\n    if (typeof execludeWordsArray == 'undefined' || execludeWordsArray.length == 0) {\n        // append each words first letter to result variable\n        words.forEach(function(word) {\n            result += word.split(\"\")[0];\n        })\n    } else {\n        // ignore execluded words from string\n        words.forEach(function(word) {\n            if (execludeWordsArray.indexOf(word) == -1) {\n                result += word.split(\"\")[0];\n            }\n        })\n    }\n    // return the result uppercase if isInitialsCapital is true else as it is\n    return (isInitialsCapital === true ? result.toUpperCase() : result);\n}\n",
+    "static": true,
+    "longname": "/home/arsan/Programming/npm/fortext/src/functions/initials.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "initials",
+    "memberof": "functions/initials.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "functions/initials.js~initials",
+    "access": "public",
+    "export": true,
+    "importPath": "fortext/functions/initials.js",
+    "importStyle": "initials",
+    "description": "Get initials of a string",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isInitialsCapital",
+        "description": "return capital letters"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "type"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "execludeWordsArray",
+        "description": "ignore words in execludeWordsArray"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": "initials of  a string"
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "functions/lastWord.js",
+    "content": "/**\n * Get last word of the text\n * @return {[String]} the last word\n */\nexport default String.prototype.lastWord = function() {\n    var str = this.trim().split(\" \");\n    return str[str.length - 1];\n}\n",
+    "static": true,
+    "longname": "/home/arsan/Programming/npm/fortext/src/functions/lastWord.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "lastWord",
+    "memberof": "functions/lastWord.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "functions/lastWord.js~lastWord",
+    "access": "public",
+    "export": true,
+    "importPath": "fortext/functions/lastWord.js",
+    "importStyle": "lastWord",
+    "description": "Get last word of the text",
+    "lineNumber": 5,
+    "return": {
+      "nullable": null,
+      "types": [
+        "[String]"
+      ],
+      "spread": false,
+      "description": "the last word"
+    },
+    "params": []
+  },
+  {
+    "kind": "index",
+    "content": "## Fortext\n\nA javascript library for text operations.\n\n### Available functions\n\n#### initials([ isInitialsCapital [ , execludeWordsArray ] ])\n##### get the initials of a string capital or as it is, with or without some words\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.initials()); // output: naasa\n    console.log(text.initials(false,[\"and\"])); //output: nasa\n    console.log(text.initials(true,[\"and\"])); //output: NASA\n\n#### firstWord()\n##### get the first word of a string\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.firstWord()); //output: national\n\n#### lastWord()\n##### get the last word of a string\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.lastWord()); //output: administration\n\n**More is yet to come ;)** ..\n",
+    "longname": "/home/arsan/Programming/npm/fortext/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n    \"name\": \"fortext\",\n    \"version\": \"1.2.2\",\n    \"description\": \"A javascript library for text operations\",\n    \"main\": \"dist/fortext.min.js\",\n    \"scripts\": {\n        \"dev\": \"webpack\",\n        \"prod\": \"webpack --config webpack.prod.js\",\n        \"build\": \"npm run dev && npm run prod\",\n        \"doc\": \"esdoc\"\n    },\n    \"keywords\": [\n        \"fortext\",\n        \"javascript\",\n        \"library\",\n        \"text\",\n        \"string\",\n        \"text\",\n        \"operations\",\n        \"arsan\",\n        \"gamal\"\n    ],\n    \"repository\": {\n        \"type\": \"git\",\n        \"url\": \"https://github.com/ArsanGamal/fortext.git\"\n    },\n    \"author\": \"Arsan Gamal <arsan.gamal@gmail.com>\",\n    \"license\": \"ISC\",\n    \"dependencies\": {},\n    \"devDependencies\": {\n        \"babel-cli\": \"^6.26.0\",\n        \"babel-core\": \"^6.26.3\",\n        \"babel-loader\": \"^7.1.5\",\n        \"babel-preset-env\": \"^1.7.0\",\n        \"esdoc\": \"^1.1.0\",\n        \"esdoc-standard-plugin\": \"^1.0.0\",\n        \"webpack\": \"^4.17.2\",\n        \"webpack-cli\": \"^3.1.0\",\n        \"webpack-dev-server\": \"^3.1.7\"\n    }\n}\n",
+    "longname": "/home/arsan/Programming/npm/fortext/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

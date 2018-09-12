@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/functions/exists.js":
+/*!*********************************!*\
+  !*** ./src/functions/exists.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n/**\n * Check the existence of a string in the string\n * @return {[Boolean]} existence of string\n */\n\nexports.default = String.prototype.exists = function (str) {\n  return this.trim().split(\" \").includes(str);\n};\n\n//# sourceURL=webpack:///./src/functions/exists.js?");
+
+/***/ }),
+
 /***/ "./src/functions/firstWord.js":
 /*!************************************!*\
   !*** ./src/functions/firstWord.js ***!
@@ -94,7 +106,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n/**\n * @Author: Arsan Gamal <arsangamal>\n * @Date:   2018-09-05T15:01:35+02:00\n * @Email:  arsan.gamal@gmail.com\n * @Filename: firstWord.js\n * @Last modified by:   arsangamal\n * @Last modified time: 2018-09-05T15:02:12+02:00\n */\n\nexports.default = function () {\n  /**\n   * Get first word from string\n   * @return {[String]} the first word\n   */\n  String.prototype.firstWord = function () {\n    return this.trim().split(\" \")[0];\n  };\n}();\n\n//# sourceURL=webpack:///./src/functions/firstWord.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n/**\n * Get first word from string\n * @return {[String]} the first word\n */\n\nexports.default = String.prototype.firstWord = function () {\n  return this.trim().split(\" \")[0];\n};\n\n//# sourceURL=webpack:///./src/functions/firstWord.js?");
+
+/***/ }),
+
+/***/ "./src/functions/howMany.js":
+/*!**********************************!*\
+  !*** ./src/functions/howMany.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n/**\n * How many occurences of a string in another string\n * @param  {[String]}  search                  search string\n * @param  {Boolean} [isCaseSensitive=false] determine the Case Sensitivity of search\n * @return {int}                          number of occurences\n */\nexports.default = String.prototype.howMany = function (search) {\n  var isCaseSensitive = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;\n\n  var re = new RegExp(search, \"g\" + (isCaseSensitive == true ? \"\" : 'i'));\n  return (this.match(re) || []).length;\n};\n\n//# sourceURL=webpack:///./src/functions/howMany.js?");
 
 /***/ }),
 
@@ -106,7 +130,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\n/**\n * @Author: Arsan Gamal <arsangamal>\n * @Date:   2018-09-05T14:58:18+02:00\n * @Email:  arsan.gamal@gmail.com\n * @Filename: initials.js\n * @Last modified by:   arsangamal\n * @Last modified time: 2018-09-05T16:00:14+02:00\n */\n\n/**\n * Get initials of a string\n * @param  {Boolean} isInitialsCapital  return capital letters\n * @param  {[type]}  execludeWordsArray ignore words in execludeWordsArray\n * @return {[String]}                     initials of the string\n */\nexports.default = function () {\n    String.prototype.initials = function (isInitialsCapital, execludeWordsArray) {\n        var result = \"\",\n            words = this.trim().split(\" \");\n        // if no execlude words go and iterate over the words array\n        if (typeof execludeWordsArray == 'undefined' || execludeWordsArray.length == 0) {\n            // append each words first letter to result variable\n            words.forEach(function (word) {\n                result += word.split(\"\")[0];\n            });\n        } else {\n            // ignore execluded words from string\n            words.forEach(function (word) {\n                if (execludeWordsArray.indexOf(word) == -1) {\n                    result += word.split(\"\")[0];\n                }\n            });\n        }\n        // return the result uppercase if isInitialsCapital is true else as it is\n        return isInitialsCapital === true ? result.toUpperCase() : result;\n    };\n}();\n\n//# sourceURL=webpack:///./src/functions/initials.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\n/**\n * Get initials of a string\n * @param  {Boolean} isInitialsCapital  return capital letters\n * @param  {type}  execludeWordsArray ignore words in execludeWordsArray\n * @return {String} initials of  a string\n */\nexports.default = String.prototype.initials = function (isInitialsCapital, execludeWordsArray) {\n    var result = \"\",\n        words = this.trim().split(\" \");\n    // if no execlude words go and iterate over the words array\n    if (typeof execludeWordsArray == 'undefined' || execludeWordsArray.length == 0) {\n        // append each words first letter to result variable\n        words.forEach(function (word) {\n            result += word.split(\"\")[0];\n        });\n    } else {\n        // ignore execluded words from string\n        words.forEach(function (word) {\n            if (execludeWordsArray.indexOf(word) == -1) {\n                result += word.split(\"\")[0];\n            }\n        });\n    }\n    // return the result uppercase if isInitialsCapital is true else as it is\n    return isInitialsCapital === true ? result.toUpperCase() : result;\n};\n\n//# sourceURL=webpack:///./src/functions/initials.js?");
 
 /***/ }),
 
@@ -118,7 +142,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n/**\n * @Author: Arsan Gamal <arsangamal>\n * @Date:   2018-09-05T15:02:27+02:00\n * @Email:  arsan.gamal@gmail.com\n * @Filename: lastWord.js\n * @Last modified by:   arsangamal\n * @Last modified time: 2018-09-05T16:00:46+02:00\n */\nexports.default = function () {\n  /**\n   * Get last word of the text\n   * @return {[String]} the last word\n   */\n  String.prototype.lastWord = function () {\n    var str = this.trim().split(\" \");\n    return str[str.length - 1];\n  };\n}();\n\n//# sourceURL=webpack:///./src/functions/lastWord.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n/**\n * Get last word of the text\n * @return {[String]} the last word\n */\nexports.default = String.prototype.lastWord = function () {\n  var str = this.trim().split(\" \");\n  return str[str.length - 1];\n};\n\n//# sourceURL=webpack:///./src/functions/lastWord.js?");
 
 /***/ }),
 
@@ -130,7 +154,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _initials = __webpack_require__(/*! ./functions/initials */ \"./src/functions/initials.js\");\n\nvar _initials2 = _interopRequireDefault(_initials);\n\nvar _firstWord = __webpack_require__(/*! ./functions/firstWord */ \"./src/functions/firstWord.js\");\n\nvar _firstWord2 = _interopRequireDefault(_firstWord);\n\nvar _lastWord = __webpack_require__(/*! ./functions/lastWord */ \"./src/functions/lastWord.js\");\n\nvar _lastWord2 = _interopRequireDefault(_lastWord);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nvar _initials = __webpack_require__(/*! ./functions/initials */ \"./src/functions/initials.js\");\n\nvar _initials2 = _interopRequireDefault(_initials);\n\nvar _firstWord = __webpack_require__(/*! ./functions/firstWord */ \"./src/functions/firstWord.js\");\n\nvar _firstWord2 = _interopRequireDefault(_firstWord);\n\nvar _lastWord = __webpack_require__(/*! ./functions/lastWord */ \"./src/functions/lastWord.js\");\n\nvar _lastWord2 = _interopRequireDefault(_lastWord);\n\nvar _howMany = __webpack_require__(/*! ./functions/howMany */ \"./src/functions/howMany.js\");\n\nvar _howMany2 = _interopRequireDefault(_howMany);\n\nvar _exists = __webpack_require__(/*! ./functions/exists */ \"./src/functions/exists.js\");\n\nvar _exists2 = _interopRequireDefault(_exists);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
