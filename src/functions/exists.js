@@ -4,5 +4,5 @@
  */
 
 export default String.prototype.exists = function(str) {
-    return this.trim().split(" ").includes(str);
+    return this.indexOf(str) != -1;
 }

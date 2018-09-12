@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n/**\n * Check the existence of a string in the string\n * @return {[Boolean]} existence of string\n */\n\nexports.default = String.prototype.exists = function (str) {\n  return this.trim().split(\" \").includes(str);\n};\n\n//# sourceURL=webpack:///./src/functions/exists.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n/**\n * Check the existence of a string in the string\n * @return {[Boolean]} existence of string\n */\n\nexports.default = String.prototype.exists = function (str) {\n  return this.indexOf(str) != -1;\n};\n\n//# sourceURL=webpack:///./src/functions/exists.js?");
 
 /***/ }),
 
