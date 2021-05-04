@@ -1,5 +1,11 @@
 window.esdocSearchIndex = [
   [
+    "fortext/functions/exists.js~exists",
+    "function/index.html#static-function-exists",
+    "<span>exists</span> <span class=\"search-result-import-path\">fortext/functions/exists.js</span>",
+    "function"
+  ],
+  [
     "fortext/functions/firstword.js~firstword",
     "function/index.html#static-function-firstWord",
     "<span>firstWord</span> <span class=\"search-result-import-path\">fortext/functions/firstWord.js</span>",
@@ -304,6 +310,12 @@ window.esdocSearchIndex = [
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
     "functions/.external-ecmascript.js~undefined",
     "external"
+  ],
+  [
+    "functions/exists.js",
+    "file/functions/exists.js.html",
+    "functions/exists.js",
+    "file"
   ],
   [
     "functions/firstword.js",

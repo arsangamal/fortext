@@ -566,16 +566,59 @@
   {
     "__docId__": 48,
     "kind": "file",
-    "name": "functions/firstWord.js",
-    "content": "/**\n * Get first word from string\n * @return {[String]} the first word\n */\n\nexport default String.prototype.firstWord = function() {\n    return this.trim().split(\" \")[0];\n}\n",
+    "name": "functions/exists.js",
+    "content": "/**\n * Check the existence of a string in the string\n * @return {[Boolean]} existence of string\n */\n\nexport default String.prototype.exists = function(str) {\n    return this.indexOf(str) !== -1;\n}\n",
     "static": true,
-    "longname": "/home/arsan/Programming/npm/fortext/src/functions/firstWord.js",
+    "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Contributions/fortext/src/functions/exists.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
     "__docId__": 49,
+    "kind": "function",
+    "name": "exists",
+    "memberof": "functions/exists.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "functions/exists.js~exists",
+    "access": "public",
+    "export": true,
+    "importPath": "fortext/functions/exists.js",
+    "importStyle": "exists",
+    "description": "Check the existence of a string in the string",
+    "lineNumber": 6,
+    "return": {
+      "nullable": null,
+      "types": [
+        "[Boolean]"
+      ],
+      "spread": false,
+      "description": "existence of string"
+    },
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "functions/firstWord.js",
+    "content": "/**\n * Get first word from string\n * @return {string} the first word\n */\n\nexport default String.prototype.firstWord = function() {\n    return this.trim().split(\" \")[0];\n}\n",
+    "static": true,
+    "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Contributions/fortext/src/functions/firstWord.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
     "kind": "function",
     "name": "firstWord",
     "memberof": "functions/firstWord.js",
@@ -592,7 +635,7 @@
     "return": {
       "nullable": null,
       "types": [
-        "[String]"
+        "string"
       ],
       "spread": false,
       "description": "the first word"
@@ -600,18 +643,18 @@
     "params": []
   },
   {
-    "__docId__": 50,
+    "__docId__": 52,
     "kind": "file",
     "name": "functions/howMany.js",
-    "content": "/**\n * How many occurences of a string in another string\n * @param  {[Strin]}  search                  search string\n * @param  {Boolean} [isCaseSensitive=false] determine the Case Sensitivity of search\n * @return {[int]}                          number of occurences\n */\nexport default String.prototype.howMany = function(search, isCaseSensitive = false) {\n    var re = new RegExp(search, \"g\" + (isCaseSensitive == true ? \"\" : 'i'));\n    return (this.match(re) || []).length;\n}\n",
+    "content": "/**\n * How many occurrences of a string in another string\n * @param  {string}  search                  search string\n * @param  {Boolean} [isCaseSensitive=false] determine the Case Sensitivity of search\n * @return {int}                          number of occurrences\n */\nexport default String.prototype.howMany = function(search, isCaseSensitive = false) {\n    let modifier = \"g\" + \"g\" + (isCaseSensitive === true ? \"\" : 'i');\n    let re = new RegExp(search, modifier);\n    return (this.match(re) || []).length;\n}\n",
     "static": true,
-    "longname": "/home/arsan/Programming/npm/fortext/src/functions/howMany.js",
+    "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Contributions/fortext/src/functions/howMany.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 51,
+    "__docId__": 53,
     "kind": "function",
     "name": "howMany",
     "memberof": "functions/howMany.js",
@@ -623,13 +666,13 @@
     "export": true,
     "importPath": "fortext/functions/howMany.js",
     "importStyle": "howMany",
-    "description": "How many occurences of a string in another string",
+    "description": "How many occurrences of a string in another string",
     "lineNumber": 7,
     "params": [
       {
         "nullable": null,
         "types": [
-          "[Strin]"
+          "string"
         ],
         "spread": false,
         "optional": false,
@@ -652,25 +695,25 @@
     "return": {
       "nullable": null,
       "types": [
-        "[int]"
+        "int"
       ],
       "spread": false,
-      "description": "number of occurences"
+      "description": "number of occurrences"
     }
   },
   {
-    "__docId__": 52,
+    "__docId__": 54,
     "kind": "file",
     "name": "functions/initials.js",
-    "content": "/**\n * Get initials of a string\n * @param  {Boolean} isInitialsCapital  return capital letters\n * @param  {type}  execludeWordsArray ignore words in execludeWordsArray\n * @return {String} initials of  a string\n */\nexport default String.prototype.initials = function(isInitialsCapital, execludeWordsArray) {\n    var\n        result = \"\",\n        words = this.trim().split(\" \");\n    // if no execlude words go and iterate over the words array\n    if (typeof execludeWordsArray == 'undefined' || execludeWordsArray.length == 0) {\n        // append each words first letter to result variable\n        words.forEach(function(word) {\n            result += word.split(\"\")[0];\n        })\n    } else {\n        // ignore execluded words from string\n        words.forEach(function(word) {\n            if (execludeWordsArray.indexOf(word) == -1) {\n                result += word.split(\"\")[0];\n            }\n        })\n    }\n    // return the result uppercase if isInitialsCapital is true else as it is\n    return (isInitialsCapital === true ? result.toUpperCase() : result);\n}\n",
+    "content": "/**\n * Get initials of a string\n * @param  {Boolean} isInitialsCapital  return capital letters\n * @param  {type}  excludedWordsArray ignore words in execludeWordsArray\n * @return {String} initials of  a string\n */\nexport default String.prototype.initials = function(isInitialsCapital, excludedWordsArray) {\n    var\n        result = \"\",\n        words = this.trim().split(\" \");\n    // if no exclude words go and iterate over the words array\n    if (typeof excludedWordsArray == 'undefined' || excludedWordsArray.length === 0) {\n        // append each words first letter to result variable\n        words.forEach(function(word) {\n            result += word.split(\"\")[0];\n        })\n    } else {\n        // ignore excluded words from string\n        words.forEach(function(word) {\n            if (excludedWordsArray.indexOf(word) === -1) {\n                result += word.split(\"\")[0];\n            }\n        })\n    }\n    // return the result uppercase if isInitialsCapital is true else as it is\n    return (isInitialsCapital === true ? result.toUpperCase() : result);\n}\n",
     "static": true,
-    "longname": "/home/arsan/Programming/npm/fortext/src/functions/initials.js",
+    "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Contributions/fortext/src/functions/initials.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 53,
+    "__docId__": 55,
     "kind": "function",
     "name": "initials",
     "memberof": "functions/initials.js",
@@ -702,7 +745,7 @@
         ],
         "spread": false,
         "optional": false,
-        "name": "execludeWordsArray",
+        "name": "excludedWordsArray",
         "description": "ignore words in execludeWordsArray"
       }
     ],
@@ -716,18 +759,18 @@
     }
   },
   {
-    "__docId__": 54,
+    "__docId__": 56,
     "kind": "file",
     "name": "functions/lastWord.js",
-    "content": "/**\n * Get last word of the text\n * @return {[String]} the last word\n */\nexport default String.prototype.lastWord = function() {\n    var str = this.trim().split(\" \");\n    return str[str.length - 1];\n}\n",
+    "content": "/**\n * Get last word of the text\n * @return {string} the last word\n */\nexport default String.prototype.lastWord = function() {\n    let str = this.trim().split(\" \");\n    return str[str.length - 1];\n}\n",
     "static": true,
-    "longname": "/home/arsan/Programming/npm/fortext/src/functions/lastWord.js",
+    "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Contributions/fortext/src/functions/lastWord.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 55,
+    "__docId__": 57,
     "kind": "function",
     "name": "lastWord",
     "memberof": "functions/lastWord.js",
@@ -744,7 +787,7 @@
     "return": {
       "nullable": null,
       "types": [
-        "[String]"
+        "string"
       ],
       "spread": false,
       "description": "the last word"
@@ -754,15 +797,15 @@
   {
     "kind": "index",
     "content": "## Fortext\n\nA javascript library for text operations.\n\n### Available functions\n\n#### initials([ isInitialsCapital [ , execludeWordsArray ] ])\n##### get the initials of a string capital or as it is, with or without some words\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.initials()); // output: naasa\n    console.log(text.initials(false,[\"and\"])); //output: nasa\n    console.log(text.initials(true,[\"and\"])); //output: NASA\n\n#### firstWord()\n##### get the first word of a string\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.firstWord()); //output: national\n\n#### lastWord()\n##### get the last word of a string\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.lastWord()); //output: administration\n\n**More is yet to come ;)** ..\n",
-    "longname": "/home/arsan/Programming/npm/fortext/README.md",
+    "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Contributions/fortext/README.md",
     "name": "./README.md",
     "static": true,
     "access": "public"
   },
   {
     "kind": "packageJSON",
-    "content": "{\n    \"name\": \"fortext\",\n    \"version\": \"1.2.2\",\n    \"description\": \"A javascript library for text operations\",\n    \"main\": \"dist/fortext.min.js\",\n    \"scripts\": {\n        \"dev\": \"webpack\",\n        \"prod\": \"webpack --config webpack.prod.js\",\n        \"build\": \"npm run dev && npm run prod\",\n        \"doc\": \"esdoc\"\n    },\n    \"keywords\": [\n        \"fortext\",\n        \"javascript\",\n        \"library\",\n        \"text\",\n        \"string\",\n        \"text\",\n        \"operations\",\n        \"arsan\",\n        \"gamal\"\n    ],\n    \"repository\": {\n        \"type\": \"git\",\n        \"url\": \"https://github.com/ArsanGamal/fortext.git\"\n    },\n    \"author\": \"Arsan Gamal <arsan.gamal@gmail.com>\",\n    \"license\": \"ISC\",\n    \"dependencies\": {},\n    \"devDependencies\": {\n        \"babel-cli\": \"^6.26.0\",\n        \"babel-core\": \"^6.26.3\",\n        \"babel-loader\": \"^7.1.5\",\n        \"babel-preset-env\": \"^1.7.0\",\n        \"esdoc\": \"^1.1.0\",\n        \"esdoc-standard-plugin\": \"^1.0.0\",\n        \"webpack\": \"^4.17.2\",\n        \"webpack-cli\": \"^3.1.0\",\n        \"webpack-dev-server\": \"^3.1.7\"\n    }\n}\n",
-    "longname": "/home/arsan/Programming/npm/fortext/package.json",
+    "content": "{\n    \"name\": \"fortext\",\n    \"version\": \"1.3.1\",\n    \"description\": \"A javascript library for text operations\",\n    \"main\": \"dist/fortext.min.js\",\n    \"scripts\": {\n        \"dev\": \"webpack\",\n        \"prod\": \"webpack --config webpack.prod.js\",\n        \"build\": \"npm run dev && npm run prod\",\n        \"doc\": \"esdoc\"\n    },\n    \"keywords\": [\n        \"fortext\",\n        \"javascript\",\n        \"library\",\n        \"text\",\n        \"string\",\n        \"operations\",\n        \"arsan\",\n        \"gamal\"\n    ],\n    \"repository\": {\n        \"type\": \"git\",\n        \"url\": \"https://github.com/ArsanGamal/fortext.git\"\n    },\n    \"author\": \"Arsan Gamal <arsan.gamal@gmail.com>\",\n    \"license\": \"ISC\",\n    \"dependencies\": {\n        \"esdoc-publish-markdown-plugin\": \"^1.1.0\"\n    },\n    \"devDependencies\": {\n        \"babel-cli\": \"^6.18.0\",\n        \"babel-core\": \"^6.26.3\",\n        \"babel-loader\": \"^7.1.5\",\n        \"babel-preset-env\": \"^1.7.0\",\n        \"esdoc\": \"^1.1.0\",\n        \"esdoc-standard-plugin\": \"^1.0.0\",\n        \"webpack\": \"^4.17.2\",\n        \"webpack-cli\": \"^3.1.0\",\n        \"webpack-dev-server\": \"^3.1.7\"\n    },\n    \"esdoc\": {\n        \"source\": \"./src/functions\",\n        \"destination\": \"./docs\",\n        \"plugins\": [\n            {\n                \"name\": \"esdoc-standard-plugin\"\n            }\n        ]\n    }\n}\n",
+    "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Contributions/fortext/package.json",
     "name": "package.json",
     "static": true,
     "access": "public"

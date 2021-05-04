@@ -1,10 +1,11 @@
 /**
- * How many occurences of a string in another string
- * @param  {[String]}  search                  search string
+ * How many occurrences of a string in another string
+ * @param  {string}  search                  search string
  * @param  {Boolean} [isCaseSensitive=false] determine the Case Sensitivity of search
- * @return {int}                          number of occurences
+ * @return {int}                          number of occurrences
  */
 export default String.prototype.howMany = function(search, isCaseSensitive = false) {
-    var re = new RegExp(search, "g" + (isCaseSensitive == true ? "" : 'i'));
+    let modifier = "g" + "g" + (isCaseSensitive === true ? "" : 'i');
+    let re = new RegExp(search, modifier);
     return (this.match(re) || []).length;
 }

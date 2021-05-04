@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 394,
+  "end": 434,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 16,
+      "line": 17,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 394,
+    "end": 434,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 16,
+        "line": 17,
         "column": 0
       }
     },
@@ -322,6 +322,75 @@
             "raw": "'./functions/howMany'"
           },
           "value": "./functions/howMany"
+        }
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 394,
+        "end": 433,
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 0
+          },
+          "end": {
+            "line": 16,
+            "column": 39
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 401,
+            "end": 407,
+            "loc": {
+              "start": {
+                "line": 16,
+                "column": 7
+              },
+              "end": {
+                "line": 16,
+                "column": 13
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 401,
+              "end": 407,
+              "loc": {
+                "start": {
+                  "line": 16,
+                  "column": 7
+                },
+                "end": {
+                  "line": 16,
+                  "column": 13
+                },
+                "identifierName": "exists"
+              },
+              "name": "exists"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 413,
+          "end": 433,
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 19
+            },
+            "end": {
+              "line": 16,
+              "column": 39
+            }
+          },
+          "extra": {
+            "rawValue": "./functions/exists",
+            "raw": "'./functions/exists'"
+          },
+          "value": "./functions/exists"
         }
       }
     ],
@@ -792,6 +861,113 @@
     },
     {
       "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 394,
+      "end": 400,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "exists",
+      "start": 401,
+      "end": 407,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 7
+        },
+        "end": {
+          "line": 16,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 408,
+      "end": 412,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 14
+        },
+        "end": {
+          "line": 16,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./functions/exists",
+      "start": 413,
+      "end": 433,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 19
+        },
+        "end": {
+          "line": 16,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
         "label": "eof",
         "beforeExpr": false,
         "startsExpr": false,
@@ -803,15 +979,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 394,
-      "end": 394,
+      "start": 434,
+      "end": 434,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 17,
           "column": 0
         },
         "end": {
-          "line": 16,
+          "line": 17,
           "column": 0
         }
       }

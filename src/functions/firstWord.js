@@ -1,6 +1,6 @@
 /**
  * Get first word from string
- * @return {[String]} the first word
+ * @return {string} the first word
  */
 
 export default String.prototype.firstWord = function() {

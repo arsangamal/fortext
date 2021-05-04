@@ -29,7 +29,8 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-firstWord">firstWord</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-exists">exists</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-firstWord">firstWord</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-howMany">howMany</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-initials">initials</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-lastWord">lastWord</a></span></span></li>
@@ -41,23 +42,23 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
  * Get initials of a string
  * @param  {Boolean} isInitialsCapital  return capital letters
- * @param  {type}  execludeWordsArray ignore words in execludeWordsArray
+ * @param  {type}  excludedWordsArray ignore words in execludeWordsArray
  * @return {String} initials of  a string
  */
-export default String.prototype.initials = function(isInitialsCapital, execludeWordsArray) {
+export default String.prototype.initials = function(isInitialsCapital, excludedWordsArray) {
     var
         result = &quot;&quot;,
         words = this.trim().split(&quot; &quot;);
-    // if no execlude words go and iterate over the words array
-    if (typeof execludeWordsArray == &apos;undefined&apos; || execludeWordsArray.length == 0) {
+    // if no exclude words go and iterate over the words array
+    if (typeof excludedWordsArray == &apos;undefined&apos; || excludedWordsArray.length === 0) {
         // append each words first letter to result variable
         words.forEach(function(word) {
             result += word.split(&quot;&quot;)[0];
         })
     } else {
-        // ignore execluded words from string
+        // ignore excluded words from string
         words.forEach(function(word) {
-            if (execludeWordsArray.indexOf(word) == -1) {
+            if (excludedWordsArray.indexOf(word) === -1) {
                 result += word.split(&quot;&quot;)[0];
             }
         })

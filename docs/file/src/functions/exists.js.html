@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">functions/howMany.js | fortext</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/functions/exists.js | fortext</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -29,7 +29,7 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-exists">exists</a></span></span></li>
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#functions">functions</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-exists">exists</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-firstWord">firstWord</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-howMany">howMany</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-initials">initials</a></span></span></li>
@@ -38,17 +38,14 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">functions/howMany.js</h1>
+<div class="content" data-ice="content"><h1 data-ice="title">src/functions/exists.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
- * How many occurrences of a string in another string
- * @param  {string}  search                  search string
- * @param  {Boolean} [isCaseSensitive=false] determine the Case Sensitivity of search
- * @return {int}                          number of occurrences
+ * Check the existence of a string in the string
+ * @return {[Boolean]} existence of string
  */
-export default String.prototype.howMany = function(search, isCaseSensitive = false) {
-    let modifier = &quot;g&quot; + &quot;g&quot; + (isCaseSensitive === true ? &quot;&quot; : &apos;i&apos;);
-    let re = new RegExp(search, modifier);
-    return (this.match(re) || []).length;
+
+export default String.prototype.exists = function(str) {
+    return this.indexOf(str) !== -1;
 }
 </code></pre>
 

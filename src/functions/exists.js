@@ -4,5 +4,5 @@
  */
 
 export default String.prototype.exists = function(str) {
-    return this.indexOf(str) != -1;
+    return this.indexOf(str) !== -1;
 }
