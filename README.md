@@ -2,6 +2,10 @@
 
 A javascript library for text operations.
 
+### Installation
+```
+npm i fortext
+```
 ### Available functions
 
 #### initials([ isInitialsCapital [ , execludeWordsArray ] ])
