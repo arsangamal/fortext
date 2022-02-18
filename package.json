@@ -33,11 +33,11 @@
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.5",
         "babel-preset-env": "^1.7.0",
-        "esdoc": "^1.1.0",
+        "esdoc": "^0.0.2",
         "esdoc-standard-plugin": "^1.0.0",
         "webpack": "^4.17.2",
-        "webpack-cli": "^3.1.0",
-        "webpack-dev-server": "^3.1.7"
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.7.4"
     },
     "esdoc": {
         "source": "./src/functions",
