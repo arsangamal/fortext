@@ -1,51 +1,50 @@
 {
-    "name": "fortext",
-    "version": "2.0.0",
-    "description": "A javascript library for text operations",
-    "main": "dist/fortext.min.js",
-    "scripts": {
-        "dev": "webpack",
-        "prod": "webpack --config webpack.prod.js",
-        "build": "npm run dev && npm run prod",
-        "doc": "esdoc"
-    },
-    "keywords": [
-        "fortext",
-        "javascript",
-        "library",
-        "text",
-        "string",
-        "operations",
-        "arsan",
-        "gamal"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ArsanGamal/fortext.git"
-    },
-    "author": "Arsan Gamal <arsan.gamal@gmail.com>",
-    "license": "ISC",
-    "dependencies": {
-        "esdoc-publish-markdown-plugin": "^1.1.0"
-    },
-    "devDependencies": {
-        "babel-cli": "^6.18.0",
-        "babel-core": "^6.26.3",
-        "babel-loader": "^7.1.5",
-        "babel-preset-env": "^1.7.0",
-        "esdoc": "^0.0.2",
-        "esdoc-standard-plugin": "^1.0.0",
-        "webpack": "^4.17.2",
-        "webpack-cli": "^4.9.2",
-        "webpack-dev-server": "^4.7.4"
-    },
-    "esdoc": {
-        "source": "./src/functions",
-        "destination": "./docs",
-        "plugins": [
-            {
-                "name": "esdoc-standard-plugin"
-            }
-        ]
-    }
+  "name": "fortext",
+  "version": "2.0.0",
+  "description": "A javascript library for text operations",
+  "main": "dist/fortext.min.js",
+  "scripts": {
+    "dev": "webpack",
+    "prod": "webpack --config webpack.prod.js",
+    "build": "npm run dev && npm run prod",
+    "doc": "esdoc",
+    "test": "jest"
+  },
+  "keywords": [
+    "fortext",
+    "javascript",
+    "library",
+    "text",
+    "string",
+    "operations",
+    "arsan",
+    "gamal"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArsanGamal/fortext.git"
+  },
+  "author": "Arsan Gamal <arsan.gamal@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "jest": "^27.5.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "esdoc": {
+    "source": "./src/functions",
+    "destination": "./docs",
+    "plugins": [
+      {
+        "name": "esdoc-standard-plugin"
+      }
+    ]
+  }
 }

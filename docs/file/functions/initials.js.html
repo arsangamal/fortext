@@ -29,7 +29,8 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-exists">exists</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-basename">basename</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-exists">exists</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-firstWord">firstWord</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-howMany">howMany</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-initials">initials</a></span></span></li>
@@ -40,15 +41,14 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">functions/initials.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
- * Get initials of a string
- * @param  {Boolean} isInitialsCapital  return capital letters
- * @param  {type}  excludedWordsArray ignore words in execludeWordsArray
- * @return {String} initials of  a string
- */
+* Get initials of a string
+* @param  {Boolean} isInitialsCapital  return capital letters
+* @param  {type}  excludedWordsArray ignore words in execludeWordsArray
+* @return {String} initials of  a string
+*/
 export default String.prototype.initials = function(isInitialsCapital, excludedWordsArray) {
-    var
-        result = &quot;&quot;,
-        words = this.trim().split(&quot; &quot;);
+    var result = &quot;&quot;;
+    var words = this.trim().split(&quot; &quot;);
     // if no exclude words go and iterate over the words array
     if (typeof excludedWordsArray == &apos;undefined&apos; || excludedWordsArray.length === 0) {
         // append each words first letter to result variable

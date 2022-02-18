@@ -25,3 +25,8 @@ A javascript library for text operations.
     console.log(text.lastWord()); //output: administration
 
 **More is yet to come ;)** ..
+
+### Test
+```
+npm run test
+```

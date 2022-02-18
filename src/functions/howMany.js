@@ -5,7 +5,7 @@
  * @return {int}                          number of occurrences
  */
 export default String.prototype.howMany = function(search, isCaseSensitive = false) {
-    let modifier = "g" + "g" + (isCaseSensitive === true ? "" : 'i');
+    let modifier = "g" + (isCaseSensitive === true ? "" : 'i');
     let re = new RegExp(search, modifier);
     return (this.match(re) || []).length;
 }
