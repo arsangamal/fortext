@@ -1,6 +1,6 @@
 {
   "name": "fortext",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A javascript library for text operations",
   "main": "dist/fortext.min.js",
   "scripts": {
