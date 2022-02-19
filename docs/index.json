@@ -828,8 +828,114 @@
     "params": []
   },
   {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "functions/prefix.js",
+    "content": "\n/**\n* Add prefix to a string\n\n* @param str string\n* @returns string\n*/\nexport default String.prototype.prefix = function (str = '') {\n    return (str || '') + this;\n};",
+    "static": true,
+    "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Playground/fortext/src/functions/prefix.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "prefix",
+    "memberof": "functions/prefix.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "functions/prefix.js~prefix",
+    "access": "public",
+    "export": true,
+    "importPath": "fortext/functions/prefix.js",
+    "importStyle": "prefix",
+    "description": "Add prefix to a string",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "string"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "str",
+        "description": "string"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "string"
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "functions/suffix.js",
+    "content": "\n/**\n * Add suffix to string\n * \n * @param str string\n * @returns string\n */\nexport default String.prototype.suffix = function(str = ''){\n    return this + (str || '');\n}",
+    "static": true,
+    "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Playground/fortext/src/functions/suffix.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "suffix",
+    "memberof": "functions/suffix.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "functions/suffix.js~suffix",
+    "access": "public",
+    "export": true,
+    "importPath": "fortext/functions/suffix.js",
+    "importStyle": "suffix",
+    "description": "Add suffix to string",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "string"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "str",
+        "description": "string"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "string"
+    }
+  },
+  {
     "kind": "index",
-    "content": "## Fortext\n\nA javascript library for text operations.\n\n### Available functions\n\n#### initials([ isInitialsCapital [ , execludeWordsArray ] ])\n##### get the initials of a string capital or as it is, with or without some words\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.initials()); // output: naasa\n    console.log(text.initials(false,[\"and\"])); //output: nasa\n    console.log(text.initials(true,[\"and\"])); //output: NASA\n\n#### firstWord()\n##### get the first word of a string\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.firstWord()); //output: national\n\n#### lastWord()\n##### get the last word of a string\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.lastWord()); //output: administration\n\n**More is yet to come ;)** ..\n\n### Test\n```\nnpm run test\n```",
+    "content": "## Fortext\n\nA javascript library for text operations.\n\n### Installation\n```\nnpm i fortext\n```\n### Available functions\n\n#### initials([ isInitialsCapital [ , execludeWordsArray ] ])\n##### get the initials of a string capital or as it is, with or without some words\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.initials()); // output: naasa\n    console.log(text.initials(false,[\"and\"])); //output: nasa\n    console.log(text.initials(true,[\"and\"])); //output: NASA\n\n#### firstWord()\n##### get the first word of a string\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.firstWord()); //output: national\n\n#### lastWord()\n##### get the last word of a string\n\n    var text = \"national aeronautics and space administration\";\n    console.log(text.lastWord()); //output: administration\n\n**More is yet to come ;)** ..\n\n### Test\n```\nnpm run test\n```",
     "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Playground/fortext/README.md",
     "name": "./README.md",
     "static": true,
@@ -837,7 +943,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"fortext\",\n  \"version\": \"2.0.0\",\n  \"description\": \"A javascript library for text operations\",\n  \"main\": \"dist/fortext.min.js\",\n  \"scripts\": {\n    \"dev\": \"webpack\",\n    \"prod\": \"webpack --config webpack.prod.js\",\n    \"build\": \"npm run dev && npm run prod\",\n    \"doc\": \"esdoc\",\n    \"test\": \"jest\"\n  },\n  \"keywords\": [\n    \"fortext\",\n    \"javascript\",\n    \"library\",\n    \"text\",\n    \"string\",\n    \"operations\",\n    \"arsan\",\n    \"gamal\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/ArsanGamal/fortext.git\"\n  },\n  \"author\": \"Arsan Gamal <arsan.gamal@gmail.com>\",\n  \"license\": \"ISC\",\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.18.0\",\n    \"babel-core\": \"^6.26.3\",\n    \"babel-loader\": \"^7.1.5\",\n    \"babel-preset-env\": \"^1.7.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"jest\": \"^27.5.1\",\n    \"webpack\": \"^4.17.2\",\n    \"webpack-cli\": \"^4.9.2\",\n    \"webpack-dev-server\": \"^4.7.4\"\n  },\n  \"esdoc\": {\n    \"source\": \"./src/functions\",\n    \"destination\": \"./docs\",\n    \"plugins\": [\n      {\n        \"name\": \"esdoc-standard-plugin\"\n      }\n    ]\n  }\n}\n",
+    "content": "{\n  \"name\": \"fortext\",\n  \"version\": \"2.0.1\",\n  \"description\": \"A javascript library for text operations\",\n  \"main\": \"dist/fortext.min.js\",\n  \"scripts\": {\n    \"dev\": \"webpack\",\n    \"prod\": \"webpack --config webpack.prod.js\",\n    \"build\": \"npm run dev && npm run prod\",\n    \"doc\": \"esdoc\",\n    \"test\": \"jest\"\n  },\n  \"keywords\": [\n    \"fortext\",\n    \"javascript\",\n    \"library\",\n    \"text\",\n    \"string\",\n    \"operations\",\n    \"arsan\",\n    \"gamal\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/ArsanGamal/fortext.git\"\n  },\n  \"author\": \"Arsan Gamal <arsan.gamal@gmail.com>\",\n  \"license\": \"ISC\",\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.18.0\",\n    \"babel-core\": \"^6.26.3\",\n    \"babel-loader\": \"^7.1.5\",\n    \"babel-preset-env\": \"^1.7.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"jest\": \"^27.5.1\",\n    \"webpack\": \"^4.17.2\",\n    \"webpack-cli\": \"^4.9.2\",\n    \"webpack-dev-server\": \"^4.7.4\"\n  },\n  \"esdoc\": {\n    \"source\": \"./src/functions\",\n    \"destination\": \"./docs\",\n    \"plugins\": [\n      {\n        \"name\": \"esdoc-standard-plugin\"\n      }\n    ]\n  }\n}\n",
     "longname": "/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Playground/fortext/package.json",
     "name": "package.json",
     "static": true,

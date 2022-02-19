@@ -36,6 +36,18 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "fortext/functions/prefix.js~prefix",
+    "function/index.html#static-function-prefix",
+    "<span>prefix</span> <span class=\"search-result-import-path\">fortext/functions/prefix.js</span>",
+    "function"
+  ],
+  [
+    "fortext/functions/suffix.js~suffix",
+    "function/index.html#static-function-suffix",
+    "<span>suffix</span> <span class=\"search-result-import-path\">fortext/functions/suffix.js</span>",
+    "function"
+  ],
+  [
     "functions/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
     "functions/.external-ecmascript.js~Array",
@@ -351,6 +363,18 @@ window.esdocSearchIndex = [
     "functions/lastword.js",
     "file/functions/lastWord.js.html",
     "functions/lastWord.js",
+    "file"
+  ],
+  [
+    "functions/prefix.js",
+    "file/functions/prefix.js.html",
+    "functions/prefix.js",
+    "file"
+  ],
+  [
+    "functions/suffix.js",
+    "file/functions/suffix.js.html",
+    "functions/suffix.js",
     "file"
   ]
 ]

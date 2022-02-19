@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1645202614794" clover="3.2.0">
-  <project timestamp="1645202614794" name="All files">
-    <metrics statements="75" coveredstatements="75" conditionals="21" coveredconditionals="20" methods="6" coveredmethods="6" elements="102" coveredelements="101" complexity="0" loc="75" ncloc="75" packages="1" files="6" classes="6"/>
+<coverage generated="1645286921072" clover="3.2.0">
+  <project timestamp="1645286921072" name="All files">
+    <metrics statements="94" coveredstatements="94" conditionals="29" coveredconditionals="28" methods="8" coveredmethods="8" elements="131" coveredelements="130" complexity="0" loc="94" ncloc="94" packages="1" files="8" classes="8"/>
     <file name="basename.js" path="/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Playground/fortext/src/functions/basename.js">
-      <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="3" type="stmt"/>
       <line num="7" count="3" type="stmt"/>
-      <line num="8" count="3" type="stmt"/>
-      <line num="9" count="3" type="cond" truecount="1" falsecount="0"/>
+      <line num="8" count="3" type="cond" truecount="1" falsecount="0"/>
+      <line num="9" count="1" type="stmt"/>
       <line num="10" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
       <line num="12" count="3" type="stmt"/>
       <line num="13" count="3" type="stmt"/>
-      <line num="14" count="3" type="stmt"/>
     </file>
     <file name="exists.js" path="/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Playground/fortext/src/functions/exists.js">
       <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
@@ -94,6 +93,32 @@
       <line num="6" count="1" type="stmt"/>
       <line num="7" count="1" type="stmt"/>
       <line num="8" count="1" type="stmt"/>
+    </file>
+    <file name="prefix.js" path="/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Playground/fortext/src/functions/prefix.js">
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="cond" truecount="3" falsecount="0"/>
+      <line num="9" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="2" type="stmt"/>
+    </file>
+    <file name="suffix.js" path="/mnt/dfbf6578-15e8-4484-ba95-e42dfd0125b9/Playground/fortext/src/functions/suffix.js">
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="cond" truecount="3" falsecount="0"/>
+      <line num="9" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>

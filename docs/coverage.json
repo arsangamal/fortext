@@ -1,7 +1,7 @@
 {
   "coverage": "100%",
-  "expectCount": 6,
-  "actualCount": 6,
+  "expectCount": 8,
+  "actualCount": 8,
   "files": {
     "functions/basename.js": {
       "expectCount": 1,
@@ -29,6 +29,16 @@
       "undocumentLines": []
     },
     "functions/lastWord.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "functions/prefix.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "functions/suffix.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []

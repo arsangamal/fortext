@@ -35,12 +35,15 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-howMany">howMany</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-initials">initials</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-lastWord">lastWord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-prefix">prefix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-suffix">suffix</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h2 id="fortext">Fortext</h2><p>A javascript library for text operations.</p>
-<h3 id="available-functions">Available functions</h3><h4 id="initials---isinitialscapital-----execludewordsarray-----">initials([ isInitialsCapital [ , execludeWordsArray ] ])</h4><h5 id="get-the-initials-of-a-string-capital-or-as-it-is--with-or-without-some-words">get the initials of a string capital or as it is, with or without some words</h5><pre><code><code class="source-code prettyprint">var text = &quot;national aeronautics and space administration&quot;;
+<h3 id="installation">Installation</h3><pre><code><code class="source-code prettyprint">npm i fortext</code>
+</code></pre><h3 id="available-functions">Available functions</h3><h4 id="initials---isinitialscapital-----execludewordsarray-----">initials([ isInitialsCapital [ , execludeWordsArray ] ])</h4><h5 id="get-the-initials-of-a-string-capital-or-as-it-is--with-or-without-some-words">get the initials of a string capital or as it is, with or without some words</h5><pre><code><code class="source-code prettyprint">var text = &quot;national aeronautics and space administration&quot;;
 console.log(text.initials()); // output: naasa
 console.log(text.initials(false,[&quot;and&quot;])); //output: nasa
 console.log(text.initials(true,[&quot;and&quot;])); //output: NASA</code>
