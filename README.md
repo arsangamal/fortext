@@ -1,4 +1,8 @@
-## Fortext
+<p align="center">
+  <img src="./logo-rectangle.png" alt="A javascript library for text operations."/>
+</p>
+
+# Fortext
 
 A javascript library for text operations.
 

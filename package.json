@@ -43,7 +43,18 @@
     "destination": "./docs",
     "plugins": [
       {
-        "name": "esdoc-standard-plugin"
+        "name": "esdoc-standard-plugin",
+        "option" : {
+          "brand": {
+            "logo" : "./logo-rectangle.png",
+            "title": "My Library",
+            "description": "A javascript library for text operations",
+            "repository": "https://github.com/arsangamal/fortext",
+            "site": "http://arsangamal.github.io/fortext",
+            "author": "https://twitter.com/arsan_gamal",
+            "image": "./logo-square.png"
+          }
+        }
       }
     ]
   }
