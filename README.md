@@ -32,8 +32,9 @@ npm i fortext
     var text = "national aeronautics and space administration";
     console.log(text.lastWord()); //output: administration
 
-**More is yet to come ;)** ..
-
+**And much more ..** ..  
+  
+    
 ### Test
 ```
 npm run test
